@@ -1,0 +1,39 @@
+.keyboard {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 10%;
+}
+
+.keyboard > .letter {
+  margin-top: 3%;
+  margin-left: 7px;
+  margin-right: 7px;
+  width: 40px;
+  height: 40px;
+  font-size: 1.5em;
+  border: solid gray;
+  color: white;
+}
+
+.keyboard>.letter:hover {
+  font-weight: bold;
+}
+
+@media all and (max-device-width: 480px) {
+
+  .keyboard {
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+  .keyboard > .letter {
+    padding: 1px;
+    font-size: 0.9em;
+    width: 30px;
+    height: 30px;
+  }
+
+  .keyboard > .letter > span {
+    margin: 0 auto;
+  }
+}
